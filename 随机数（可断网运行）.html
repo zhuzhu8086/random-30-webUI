@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+@font-face{
+            font-family:comfortaa;
+            src:url('./files/font0.ttf');
+        }
+		h3 {
+			text-align:center;
+		}
+		p {
+			font-size:70px;
+                        font-family:comfortaa;
+		}
+		h5 {
+			font-size:10px;
+			color:grey;
+		}
+	</style>
+			<title>猪猪的小工具</title>
+		<link rel="stylesheet" href="./files/bootstrap.min.css">
+	<script src="./files/bootstrap.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid"> 
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">猪猪的小工具</a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">1～30随机数（beta）</a></li>
+			
+            <li><a href="#">敬请期待。。。</a></li>
+           
+        </ul>
+    </div>
+    </div>
+</nav>
+	<h3>
+<p id="random30">（本行将用于显示结果）</p>
+<button onclick="myFunction()">抽取1-30随机数（js）</button>
+<script>
+function myFunction(){
+	document.getElementById("random30").innerHTML=(Math.floor(Math.random()*30)+1);;
+}
+</script>
+<br>
+<hr>
+<img border="0" src="./files/img0.jpeg" alt="ban" width="304" height="228">
+	</h3>
+	
+</body>
+</html>
